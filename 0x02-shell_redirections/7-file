@@ -1,4 +1,4 @@
 #!/bin/bash
-file='\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)'
+file="\\*\\'"Best School"\\'\\*$\?\*\*\*\*\*:)"
 echo "Best School" > "$file"
 echo >> "$file"
