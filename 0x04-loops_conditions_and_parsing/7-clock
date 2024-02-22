@@ -4,13 +4,14 @@
 hour=0
 minute=1
 
-while (( hour <= 12 )); do
-
-    printf "%02d:%02d\n" $hour $minute
+while [ $hour -le 12 ]; do
+        echo "Hour: $hour"
     
-    ((minute++))
-    if (( minute == 60 )); then
-        minute=0
-        ((hour++))
-    fi
+        while [ $minute -le 59 ]; do
+        echo $minute
+        ((minute++))
+    done
+    
+        minute=1
+    ((hour++))
 done
