@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 # Set IFS to ':' to parse /etc/passwd fields
 
-IFS=':'
-while read -r username password uid gid info homedir shell; do
-    # Print the formatted user information
-    echo "The user $username is part of the $gid gang, lives in $homedir, and rides $shell."
-    echo "User ID's place is protected by the passcode $password."
-    echo "More info about the user here: $info"
-    echo ""
-done < /etc/passwd
+while IFS=':' read -r username password uid gid info home shell; do
+  echo "The user $username is part of the $gid gang,"\
+  "lives in $home and rides $shell."\
+  "$uid's place is protected by the passcode $password,"\
+  "more info about the user here: $info"
+done < "/etc/passwd"
