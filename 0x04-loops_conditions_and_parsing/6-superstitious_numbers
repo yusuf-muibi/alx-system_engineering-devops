@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 # This script displays numbers from 1 to 20 and displays specific messages for certain loop iterations
 
-counter=0
+counter=1
 
-while (( counter < 20 )); do
+while (( counter <= 20 )); do
     echo $counter
     
     case $counter in
-        3)
+        4)
             echo "bad luck from China"
             ;;
-        8)
+        9)
             echo "bad luck from Japan"
             ;;
-        16)
+        17)
             echo "bad luck from Italy"
             ;;
         *)
