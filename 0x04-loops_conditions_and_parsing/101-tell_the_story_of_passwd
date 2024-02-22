@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-
 # Set IFS to ':' to parse /etc/passwd fields
-IFS=':'
 
+IFS=':'
 while read -r username password uid gid info homedir shell; do
     # Print the formatted user information
     echo "The user $username is part of the $gid gang, lives in $homedir, and rides $shell."
