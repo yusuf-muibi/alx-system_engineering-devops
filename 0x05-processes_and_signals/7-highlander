@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Function to handle SIGTERM signal and keep
-# printing indefinitely
+# Function to handle SIGTERM signal and keep printing
 
 while true
 do
