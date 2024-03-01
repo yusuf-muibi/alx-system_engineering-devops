@@ -1,4 +1,4 @@
-#!/bin/bash/env bash
+#!/usr/bin/env bash
 # Bash script to configure DNS resolution on an Ubuntu server.
 # This script sets up localhost to resolve to 127.0.0.2 and facebook.com to resolve to 8.8.8.8.
 

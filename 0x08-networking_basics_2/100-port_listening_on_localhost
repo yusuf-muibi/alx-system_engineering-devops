@@ -1,4 +1,4 @@
-#!/bin/bash/env bash
+#!/usr/bin/env bash
 # Bash script to listen on port 98 on localhost using netcat
 # Start listening on port 98
 
